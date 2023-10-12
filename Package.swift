@@ -13,10 +13,10 @@ let package = Package(
             name: "BNBNeurobeautyMakeup",
             targets: [
                 "BNBNeurobeautyMakeup",
-                "BNBNeurobeautyMakeupBNBSdkCoreTarget",
-                "BNBNeurobeautyMakeupBNBEffectPlayerTarget",
-                "BNBNeurobeautyMakeupBNBScriptingTarget",
-                "BNBNeurobeautyMakeupBNBFaceTrackerTarget"
+                "BNBNeurobeautyMakeupBNBSdkCore",
+                "BNBNeurobeautyMakeupBNBEffectPlayer",
+                "BNBNeurobeautyMakeupBNBScripting",
+                "BNBNeurobeautyMakeupBNBFaceTracker"
             ]
         ),
     ],
@@ -45,7 +45,7 @@ let package = Package(
             checksum: "1c959c056d30fa942bea6077a250b6477b01404b7598e5164818c1045d0463ad"
         ),
         .target(
-            name: "BNBNeurobeautyMakeupBNBSdkCoreTarget",
+            name: "BNBNeurobeautyMakeupBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -54,7 +54,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeupBNBEffectPlayerTarget",
+            name: "BNBNeurobeautyMakeupBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -63,7 +63,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeupBNBScriptingTarget",
+            name: "BNBNeurobeautyMakeupBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
@@ -72,7 +72,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeupBNBFaceTrackerTarget",
+            name: "BNBNeurobeautyMakeupBNBFaceTracker",
             dependencies: [
                 .product(
                     name: "BNBFaceTracker",
