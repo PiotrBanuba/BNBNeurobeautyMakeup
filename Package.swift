@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-15"
+let bnbPackageVersion: Version = "1.8.0-16"
 
 let package = Package(
     name: "BNBNeurobeautyMakeup",
@@ -45,7 +45,7 @@ let package = Package(
             checksum: "1c959c056d30fa942bea6077a250b6477b01404b7598e5164818c1045d0463ad"
         ),
         .target(
-            name: "BNBNeurobeautyMakeupBNBSdkCore",
+            name: "BNBNeurobeautyMakeup_BNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -54,7 +54,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeupBNBEffectPlayer",
+            name: "BNBNeurobeautyMakeup_BNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -63,7 +63,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeupBNBScripting",
+            name: "BNBNeurobeautyMakeup_BNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
@@ -72,7 +72,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeupBNBFaceTracker",
+            name: "BNBNeurobeautyMakeup_BNBFaceTracker",
             dependencies: [
                 .product(
                     name: "BNBFaceTracker",
