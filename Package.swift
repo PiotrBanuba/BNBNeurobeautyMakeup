@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-14"
+let bnbPackageVersion: Version = "1.8.0-15"
 
 let package = Package(
     name: "BNBNeurobeautyMakeup",
@@ -12,11 +12,11 @@ let package = Package(
         .library(
             name: "BNBNeurobeautyMakeup",
             targets: [
-                "BNBNeurobeautyMakeup_Target",
-                "BNBNeurobeautyMakeup_BNBSdkCore_Target",
-                "BNBNeurobeautyMakeup_BNBEffectPlayer_Target",
-                "BNBNeurobeautyMakeup_BNBScripting_Target",
-                "BNBNeurobeautyMakeup_BNBFaceTracker_Target"
+                "BNBNeurobeautyMakeup",
+                "BNBNeurobeautyMakeup_BNBSdkCore",
+                "BNBNeurobeautyMakeup_BNBEffectPlayer",
+                "BNBNeurobeautyMakeup_BNBScripting",
+                "BNBNeurobeautyMakeup_BNBFaceTracker"
             ]
         ),
     ],
@@ -40,12 +40,12 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "BNBNeurobeautyMakeup_Target",
+            name: "BNBNeurobeautyMakeup",
             url: "https://d2cm7wtcqqw29.cloudfront.net/1.8.0-58-g46079e7d74/BNBNeurobeautyMakeup.zip",
             checksum: "1c959c056d30fa942bea6077a250b6477b01404b7598e5164818c1045d0463ad"
         ),
         .target(
-            name: "BNBNeurobeautyMakeup_BNBSdkCore_Target",
+            name: "BNBNeurobeautyMakeupBNBSdkCore",
             dependencies: [
                 .product(
                     name: "BNBSdkCore",
@@ -54,7 +54,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeup_BNBEffectPlayer_Target",
+            name: "BNBNeurobeautyMakeupBNBEffectPlayer",
             dependencies: [
                 .product(
                     name: "BNBEffectPlayer",
@@ -63,7 +63,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeup_BNBScripting_Target",
+            name: "BNBNeurobeautyMakeupBNBScripting",
             dependencies: [
                 .product(
                     name: "BNBScripting",
@@ -72,7 +72,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "BNBNeurobeautyMakeup_BNBFaceTracker_Target",
+            name: "BNBNeurobeautyMakeupBNBFaceTracker",
             dependencies: [
                 .product(
                     name: "BNBFaceTracker",
