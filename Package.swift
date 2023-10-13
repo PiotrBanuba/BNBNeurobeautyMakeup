@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-13"
+let bnbPackageVersion: Version = "1.8.0-14"
 
 let package = Package(
     name: "BNBNeurobeautyMakeup",
@@ -13,10 +13,10 @@ let package = Package(
             name: "BNBNeurobeautyMakeup",
             targets: [
                 "BNBNeurobeautyMakeup_Target",
-                "BNBNeurobeautyMakeup_BNBNeurobeautyMakeup_Target",
-                "BNBNeurobeautyMakeup_BNBNeurobeautyMakeup_Target",
-                "BNBNeurobeautyMakeup_BNBNeurobeautyMakeup_Target",
-                "BNBNeurobeautyMakeup_BNBNeurobeautyMakeup_Target"
+                "BNBNeurobeautyMakeup_BNBSdkCore_Target",
+                "BNBNeurobeautyMakeup_BNBEffectPlayer_Target",
+                "BNBNeurobeautyMakeup_BNBScripting_Target",
+                "BNBNeurobeautyMakeup_BNBFaceTracker_Target"
             ]
         ),
     ],
