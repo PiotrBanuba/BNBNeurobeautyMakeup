@@ -1,7 +1,7 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let bnbPackageVersion: Version = "1.8.0-64-g951557ebd1"
+let bnbPackageVersion: Version = "1.9.1-83-gf89cbbd807"
 
 let package = Package(
     name: "BNBNeurobeautyMakeup",
@@ -41,8 +41,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BNBNeurobeautyMakeup",
-            url: "https://d2cm7wtcqqw29.cloudfront.net/1.8.0-64-g951557ebd1/BNBNeurobeautyMakeup.zip",
-            checksum: "e07cd8052b78f0393485e2b2141da5d1337212b55bad2e32903b38ab1cf9b216"
+            url: "https://d2cm7wtcqqw29.cloudfront.net/1.9.1-83-gf89cbbd807/BNBNeurobeautyMakeup.zip",
+            checksum: "300690b99c51eade2a7076b5b4881aa2170853619657cd118bb817989d169e25"
         ),
         .target(
             name: "BNBNeurobeautyMakeup_BNBSdkCore",
